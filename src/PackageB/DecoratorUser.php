@@ -13,15 +13,12 @@ class DecoratorUser implements UserInterface
         $this->user = $user;
     }
 
-    /**
-     * @return string
-     */
-    public function getName()
+    public function getName(): string
     {
         return $this->user->getName();
     }
 
-    public function getBirthday()
+    public function getBirthday(): \DateTime
     {
         return $this->user->getBirthday();
     }

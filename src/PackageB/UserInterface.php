@@ -6,13 +6,7 @@ interface UserInterface
 {
     const TEST = 'test';
 
-    /**
-     * @return string
-     */
-    public function getName();
+    public function getName(): string;
 
-    /**
-     * @return \DateTime
-     */
-    public function getBirthday();
+    public function getBirthday(): \DateTime;
 }

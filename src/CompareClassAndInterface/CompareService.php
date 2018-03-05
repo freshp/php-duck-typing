@@ -7,14 +7,15 @@ class CompareService
     /**
      * example to check if an object fits to an interface without coupling
      *
-     * @param $object
-     * @param $interface
+     * @param object|string $object
+     * @param string $interface
      *
      * @return bool
+     * @throws \ReflectionException
      */
-    public static function fit($object, $interface)
+    public static function fit($object, $interface): bool
     {
-        if (is_a($object, $interface)) {
+        if (true === is_a($object, $interface)) {
             return true;
         }
 
@@ -23,7 +24,7 @@ class CompareService
         foreach ($interfaceReflection->getMethods() as $method) {
             $tmpMethodName = $method->getName();
 
-            if (false === method_exists($object, $method->getName())) {
+            if (false === method_exists($object, $tmpMethodName)) {
                 return false;
             }
 
@@ -36,4 +37,4 @@ class CompareService
 
         return true;
     }
-} 
+}

@@ -7,7 +7,7 @@ class TestUser implements UserInterface
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return 'name';
     }
@@ -15,9 +15,9 @@ class TestUser implements UserInterface
     /**
      * @return \DateTime
      */
-    public function getBirthday()
+    public function getBirthday(): \DateTime
     {
         return new \DateTime();
     }
 
-} 
+}

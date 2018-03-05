@@ -1,7 +1,9 @@
 {
-    "name": "php-interface-example",
+    "name": "freshp/php-interface-example",
     "type": "project",
-    "require": {},
+    "require": {
+        "php": ">=7.2"
+    },
     "autoload": {
         "psr-4": {
             "TestProject\\": "src"

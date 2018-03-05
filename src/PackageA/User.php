@@ -15,18 +15,18 @@ class User
         $this->birthday = $birthday;
     }
 
-    public function getBirthday()
+    public function getBirthday(): \DateTime
     {
         return $this->birthday;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
-} 
+}
