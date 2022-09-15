@@ -4,6 +4,8 @@ I am looking for a possibility to check, if an object fit to an interface, which
 
 I also asked the question at https://stackoverflow.com/questions/47533037/check-an-object-for-interface-which-is-not-impemented
 
+*UPDATE:* This language feature is called duck typing and it is already available for python or javascript. I really want it for php.
+ 
 ## Example
 
 You include `PackageA` to your project. This package is not yours.
